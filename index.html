@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Clone Interface</title>
+    
+    <link rel="stylesheet" href="tiktok.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header desktop-header">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+            <span class="search-line"></span>
+            <button><i class='bx bx-search'></i></button>
+        </div>
+        <div class="header-actions">
+            <button class="upload-btn">
+                <i class='bx bx-plus'></i> Carregar
+            </button>
+            <i class='bx bx-paper-plane icon-btn'></i>
+            <i class='bx bx-message-square-minus icon-btn'></i>
+            <div class="avatar-placeholder"></div>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="mobile-icon-left">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="mobile-tabs">
+            <span class="tab-item">Seguindo</span>
+            <span class="tab-item active">Para você</span>
+        </div>
+        <div class="mobile-icon-right">
+            <i class='bx bx-search'></i>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active"><i class='bx bxs-home'></i> Para você</a>
+                <a href="#" class="nav-link"><i class='bx bx-compass'></i> Explorar</a>
+                <a href="#" class="nav-link"><i class='bx bx-group'></i> Seguindo</a>
+                <a href="#" class="nav-link"><i class='bx bx-user-check'></i> Amigos</a>
+                <a href="#" class="nav-link"><i class='bx bx-video'></i> LIVE</a>
+                <a href="#" class="nav-link"><i class='bx bx-user-circle'></i> Perfil</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Empresa • Programa • Termos</p>
+                <p>© 2025 TikTok</p>
+            </div>
+        </aside>
+
+        <main class="feed-container">
+            <div class="video-card">
+                
+                <div class="video-wrapper">
+                    <img src="https://p16-pu-sign-no.tiktokcdn-eu.com/tos-no1a-p-0037-no/o4gWxErxpFfXsjA3ADBJFBhSFDEQkQfRXEstKq~tplv-tiktokx-origin.image?dr=14575&x-expires=1766707200&x-signature=6kGzBjA%2Bs2j%2BkL2Ss4YYsf%2BP88w%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my3" alt="Video Content" class="video-content">
+                    
+                    <div class="volume-icon-container">
+                        <i class='bx bxs-volume-full'></i>
+                    </div>
+
+                    <div class="video-overlay"></div>
+
+                    <div class="post-info">
+                        <h3 class="username">charlixcx</h3>
+                        <p class="description">watched some stuff xx #whattowatch</p>
+                        <div class="music-tag">
+                            <i class='bx bxs-music'></i> l - charlixcx &nbsp; som original
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions-bar">
+                    
+                    <div class="avatar-container">
+                        <img src="https://p19-common-sign-useastred.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/04120d16346f4815edc1893fbd40296a~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=53e8a883&x-expires=1766707200&x-signature=eg7hCeJ7ZqF%2BwgtR%2FxJN6Nacu80%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=my2" alt="Avatar" class="avatar-img">
+                        <div class="follow-icon"><i class='bx bx-plus'></i></div>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class='bx bxs-heart filled'></i>
+                        <span>123.7K</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class='bx bxs-message-rounded-dots'></i>
+                        <span>14594</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class='bx bxs-bookmark-star'></i>
+                        <span>78.2K</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class='bx bxs-share'></i>
+                        <span>Compartilhar</span>
+                    </div>
+
+                    <div class="action-btn music-disc-container">
+                        <div class="music-disc">
+                            <img src="https://p19-common-sign-useastred.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/04120d16346f4815edc1893fbd40296a~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=53e8a883&x-expires=1766707200&x-signature=eg7hCeJ7ZqF%2BwgtR%2FxJN6Nacu80%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=my2" alt="Album Art">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <nav class="mobile-bottom-nav">
+        <div class="nav-item active">
+            <i class='bx bxs-home'></i>
+            <span>Início</span>
+        </div>
+        <div class="nav-item">
+            <i class='bx bx-compass'></i>
+            <span>Descobrir</span>
+        </div>
+        <div class="nav-item plus-button-container">
+            <div class="plus-btn-style">
+                <i class='bx bx-plus'></i>
+            </div>
+        </div>
+        <div class="nav-item">
+            <i class='bx bx-message-minus'></i>
+            <span>Caixa de ent...</span>
+        </div>
+        <div class="nav-item">
+            <i class='bx bx-user'></i>
+            <span>Perfil</span>
+        </div>
+    </nav>
+
+</body>
+</html>
